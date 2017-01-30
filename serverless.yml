@@ -1,4 +1,4 @@
-service: log-lady # NOTE: update this with your service name
+service: log-lady
 
 provider:
   name: aws
