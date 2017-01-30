@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "GetCharacterInfo",
+      "slots": [
+        {
+          "name": "CharacterInfo",
+          "type": "CHARACTERS_LIST"
+        }
+      ]
+    },
+    {
+      "intent": "GetCharacterActors",
+      "slots": [
+        {
+          "name": "CharacterActors",
+          "type": "CHARACTERS_LIST"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

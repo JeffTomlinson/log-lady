@@ -1,0 +1,12 @@
+service: log-lady # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: us-east-1
+
+functions:
+  logLady:
+    handler: log-lady.handler
+    events:
+      - alexaSkill
