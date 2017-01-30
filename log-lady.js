@@ -162,19 +162,28 @@ function arrayConcat (array, delimiter, delimiterLast) {
   delimiterLast = delimiterLast || false;
   let output = '';
 
-  if (delimiterLast) {
+  if (array.length === 1) {
+    output = array[0];
+  }
+  else if (delimiterLast) {
     let i;
+
     for (i = 0; i < array.length; ++i) {
-      if (i === array.length - 1) {
-        output += delimiterLast + array[i];
+      if (i > 0) {
+        if (i === array.length - 1) {
+          output += delimiterLast + array[i];
+        }
+        else {
+          output += delimiter + array[i];
+        }
       }
       else {
-        output += delimiter + array[i];
+        output += array[i];
       }
     }
   }
   else {
-    array.join()
+    output = array.join(delimiter)
   }
 
   return output;
