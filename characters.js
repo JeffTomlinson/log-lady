@@ -12,14 +12,14 @@ module.exports = {
       actors: [
         'Sheryl Lee'
       ],
-      summary: "Laura Palmer was a high school student whose death shook the town of Twin Peaks, Washington and sparked an investigation led by FBI Special Agent Dale Cooper. She was Donna Hayward's best friend and the girlfriend of Bobby Briggs."
+      summary: "Laura Palmer was a high school student whose death shook the town of Twin Peaks and sparked an investigation led by FBI Special Agent Dale Cooper. She was Donna Hayward's best friend and the girlfriend of Bobby Briggs."
     },
     'leland palmer': {
       name: 'Leland Palmer',
       actors: [
         'Ray Wise'
       ],
-      summary: "Leland Palmer was a well-known and respected attorney in Twin Peaks. His family seemed to be the perfect family, but when his daughter Laura was murdered, Leland’s psychological foundations began to crumble."
+      summary: "Leland Palmer was a well-known and respected attorney in Twin Peaks. He seemed to have the perfect family, but when his daughter Laura was murdered, Leland’s psychological foundations began to crumble."
     },
     'diane': {
       name: 'Diane',
@@ -42,6 +42,6 @@ module.exports = {
         'Frank Silva'
       ],
       summary: "Bob, or Killer BOB, is an entity from the Black Lodge, a realm of pure evil which exists on an alternate plane of reality. He spends most of his time on Earth possessing human beings, although he also travels in the form of an owl."
-    },
+    }
   }
 };
