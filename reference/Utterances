@@ -1,5 +1,11 @@
 GetCharacterInfo who is {CharacterInfo}
+GetCharacterInfo who was {CharacterInfo}
+GetCharacterInfo tell me about {CharacterInfo}
 GetCharacterInfo tell me about the character {CharacterInfo}
+GetCharacterActors who plays {CharacterActors}
 GetCharacterActors who played {CharacterActors}
+GetCharacterActors who play {CharacterActors}
+GetCharacterActors tell me who plays {CharacterActors}
+GetCharacterActors tell me who plays the character {CharacterActors}
 GetCharacterActors tell me who played {CharacterActors}
 GetCharacterActors tell me who played the character {CharacterActors}
