@@ -1,15 +1,15 @@
 'use strict';
 
+const Alexa = require('alexa-sdk');
+const _ = require('lodash');
+const characters = require('./characters');
+
 exports.handler = (event, context) => {
   const alexa = Alexa.handler(event, context);
   alexa.resources = languageStrings;
   alexa.registerHandlers(handlers);
   alexa.execute();
 };
-
-const Alexa = require('alexa-sdk');
-const _ = require('lodash');
-const characters = require('./characters');
 
 // Translatable strings.
 const languageStrings = {
