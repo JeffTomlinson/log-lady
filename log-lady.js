@@ -68,32 +68,6 @@ const handlers = {
     this.attributes.speechReprompt = speechReprompt;
     this.emit(':ask', speechOutput, speechReprompt);
   },
-  // Intent handler for GetCharacterActors.
-  'GetCharacterActors': function () {
-    // Get intent value.
-    const character = this.event.request.intent.slots.CharacterActors.value;
-    let speechReprompt = this.t('GENERIC_REPROMPT');
-    let speechOutput = this.t('NOT_FOUND_MESSAGE') + ' ' +  speechReprompt;
-
-    if (character && character.length) {
-      // Get characters data.
-      let options = this.t('CHARACTERS');
-      // Get best match for the input value.
-      let characterData = getDataBestMatch(character, options);
-
-      if (characterData) {
-        speechOutput = this.t('ACTORS_RESPONSE', characterData.name, arrayConcat(characterData.actors, ', ', ', ' + this.t('CONCAT_AND') + ' '));
-        let cardTitle = this.t('ACTORS_CARD_TITLE', this.t('SKILL_NAME'), characterData.name);
-        this.attributes.speechOutput = speechOutput;
-        this.attributes.speechReprompt = speechReprompt;
-        this.emit(':askWithCard', speechOutput, speechReprompt, cardTitle, speechOutput);
-      }
-    }
-
-    this.attributes.speechOutput = speechOutput;
-    this.attributes.speechReprompt = speechReprompt;
-    this.emit(':ask', speechOutput, speechReprompt);
-  },
   'AMAZON.HelpIntent': function () {
     this.attributes.speechOutput = this.t('HELP_MESSAGE');
     this.attributes.speechReprompt = this.t('HELP_REPROMPT');
